@@ -36,3 +36,76 @@
     transform: rotate(360deg);
   }
 }
+
+/* 這套用到整份文件 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 常用到的顏色 */
+:root{
+  --mainWhite:#ffffff;
+  --mainBlack:#000000;
+  --mainGrey:#cecece;
+  --mainBlue:#5ef0f5;
+  --boardcolor:#9dfabc;
+}
+/* 使用body這標籤，就會套用 */
+body{
+  padding-top: 45px;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  line-height: 1.4;
+}
+/* 使用相同的classname,就會套用 */
+.navbar{
+  background: var(--mainGrey);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.footer{
+  background: var(--mainGrey);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* board */
+.board,
+.featuredboard{
+  justify-content: center;
+  height: 360px;
+  display: flex;
+  width: 100%;
+}
+.featuredboard{
+  background: url("./images/code.jpg") center/cover no-repeat;
+  min-height: 100vh;
+}
+.coverboard{
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+}
+/* board end */
+.banner{
+  display: inline-block;
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  margin-top: 6rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.banner article{
+  font-size: 1.5rem;
+}
+.title{
+  text-align: center;
+}
+.title h1{
+  font-size: 4rem;
+  margin-top: 12rem;
+  margin-left: 2rem;
+}

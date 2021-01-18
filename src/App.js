@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./App.css"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+import InfoBoard from "./components/InfoBoard"
+import FeaturedBoard from "./components/FeaturedBoard"
+import Banner from "./components/Banner"
 
-function App() {
+export default function App() {
+  let article=
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <FeaturedBoard title="FeaturedBoard">
+        <Banner article={article}/>
+      </FeaturedBoard>
+      <h3>My Blog by React</h3>
+      <InfoBoard/>
+      <Footer/>
     </div>
   );
 }
-
-export default App;
