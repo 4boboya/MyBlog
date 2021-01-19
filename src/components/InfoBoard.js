@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function InfoBoard() {
+export default function InfoBoard({children,pic,className}) {
     return(
-        <div className="board">
-            <h1>from InfoBoard</h1>
+        <div className={className}>
+            {children}
+            <img alt="" src={pic}/>
         </div>
     ) 
     

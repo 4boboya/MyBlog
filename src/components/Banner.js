@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Banner() {
+export default function Banner({article}) {
     return (
         <div className="banner">
-            <article>{this.props.article}</article>
+            <article>{article}</article>
         </div>
     )
 }

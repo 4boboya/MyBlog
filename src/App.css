@@ -67,29 +67,42 @@ body{
   width: 100%;
 }
 .footer{
-  background: var(--mainGrey);
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+  position: absolute;
+  height: 120px;
   width: 100%;
+  text-align: center;
+}
+.text{
+  margin-top: 1rem;
+}
+.footer h1{
+  font-size: 1.5rem;
+}
+.information{
+  margin-top: 0.5rem;
 }
 /* board */
 .board,
 .featuredboard{
-  justify-content: center;
-  height: 360px;
+  min-height: 100vh;
   display: flex;
   width: 100%;
 }
+.board img{
+  min-width: 30vw;
+  max-height: 100vh;
+}
 .featuredboard{
   background: url("./images/code.jpg") center/cover no-repeat;
-  min-height: 100vh;
 }
 .coverboard{
   background: rgba(0, 0, 0, 0.5);
   color: var(--mainWhite);
 }
 /* board end */
+/* banner */
 .banner{
   display: inline-block;
   color: var(--mainWhite);
@@ -101,6 +114,8 @@ body{
 .banner article{
   font-size: 1.5rem;
 }
+/* banner end*/
+/* title */
 .title{
   text-align: center;
 }
@@ -109,3 +124,42 @@ body{
   margin-top: 12rem;
   margin-left: 2rem;
 }
+.title div{
+  width: 8rem;
+  height: 5px;
+  margin: 0 auto;
+  background: var(--mainWhite);
+}
+.subtitle{
+  text-align: left;
+}
+.subtitle h1{
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  width: 16vw;
+}
+.subtitle div{
+  width: 3.5rem;
+  height: 3px;
+  margin-left: 5rem;
+  background: var(--mainBlack);
+}
+/* title end */
+/* article */
+.article{
+  display: flex;
+  max-width: 80vw;
+}
+.article article{
+  margin-top: 16rem;
+  margin-right: 6rem;
+}
+.article p{
+  margin-top: 14rem;
+}
+.article section{
+  margin-right: 6rem;
+}
+/* article end */
