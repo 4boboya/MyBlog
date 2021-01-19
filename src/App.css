@@ -60,11 +60,29 @@ body{
 }
 /* 使用相同的classname,就會套用 */
 .navbar{
-  background: var(--mainGrey);
+  background: var(--mainBlack);
+  color: var(--mainWhite);
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
+  padding: 0.75rem 2rem;
+}
+.navbar section{
+  display: flex;
+  justify-content: space-between;
+}
+.path{
+  display: flex;
+  align-items: center;
+}
+.navbar h1{
+  font-size: 2rem;
+  text-align: center;
+}
+.navbar h2{
+  font-size: 1rem;
+  padding: 1rem;
+  align-items: right;
 }
 .footer{
   background: var(--mainBlack);
@@ -78,9 +96,11 @@ body{
   margin-top: 1rem;
 }
 .footer h1{
+  color: #bbb;
   font-size: 1.5rem;
 }
 .information{
+  color: #bbb;
   margin-top: 0.5rem;
 }
 /* board */

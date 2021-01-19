@@ -2,13 +2,9 @@ import React from 'react'
 import "./App.css"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
-import InfoBoard from "./components/InfoBoard"
-import FeaturedBoard from "./components/FeaturedBoard"
-import Banner from "./components/Banner"
-import Article from './components/Article'
-import SkillBoard from "./components/SkillBoard"
-import pic from "./images/me.jpg"
-import pic2 from "./images/skill.jpg"
+import Home from "./page/Home"
+import About from "./page/About"
+import {Route, Switch} from "react-router-dom"
 
 export default function App() {
   let article=
@@ -17,15 +13,10 @@ export default function App() {
   return (
     <div>
       <Navbar/>
-      <FeaturedBoard title="Hi~我是張揚" className="title">
-        <Banner article={article}/>
-      </FeaturedBoard>
-      <InfoBoard pic={pic} className="board">
-        <Article article={article} title="About me" className="subtitle"/>
-      </InfoBoard>
-      <SkillBoard pic={pic2} className="board">
-        <Article article={skill} title="Skill" className="subtitle"/>
-      </SkillBoard>
+      <Switch>
+        <Route path="/About" component={About}/>
+        <Route exact path="/" component={Home}/>
+      </Switch>
       <Footer/>
     </div>
   );
