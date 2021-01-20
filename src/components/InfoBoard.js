@@ -9,3 +9,6 @@ export default function InfoBoard({children,pic,className}) {
     ) 
     
 }
+InfoBoard.defaultProps={
+    className:"board-nopic"
+}
